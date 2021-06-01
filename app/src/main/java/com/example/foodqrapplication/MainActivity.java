@@ -8,15 +8,38 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    private Activity activity;
+    private ImageButton createQRBtn;
+    private Button scanQRBtn;
+    public String editText="NamYoungJun";
+    public EditText editText3;
+    public String editText2="01028455161";
+    public EditText editText4;
+    public String text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        createQRBtn = (ImageButton) findViewById(R.id.createQR);
+        /*scanQRBtn = (Button) findViewById(R.id.scanQR);
+        editText = (EditText) findViewById(R.id.editText);
+        editText2 = (EditText) findViewById(R.id.editText2);*/
+
+
+        createQRBtn.setOnClickListener(v -> {
+            text =editText/*.getText().toString() + " Phone :" + editText2*/;
+            Intent intent = new Intent(MainActivity.this, CreateQR.class);
+
+            intent.putExtra("text",text);
+
+            startActivity(intent);
+        });
 
         ImageButton back = findViewById(R.id.back_btn);
         back.setOnClickListener(v -> onBackPressed());

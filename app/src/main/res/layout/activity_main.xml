@@ -94,7 +94,7 @@
             android:layout_weight="1"
             android:gravity="center">
             <ImageButton
-                android:id="@+id/qr_btn"
+                android:id="@+id/createQR"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:src="@mipmap/qr_btn"
