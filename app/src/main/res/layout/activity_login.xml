@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity"
+    android:background="@color/main_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom|center">
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@mipmap/main_top"/>
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/main_bottom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phnum"
+            android:ems="10"
+            android:hint="(아이디 입력)"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cnum"
+            android:ems="10"
+            android:hint="(비밀번호 입력)"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/log_btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/login_btn"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@color/main_color"
+            android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/skip_btn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/skip_btn"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@color/main_color"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/log_reg"/>
+        <ImageButton
+            android:id="@+id/register_btn"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/register_btn"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@color/main_color"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
